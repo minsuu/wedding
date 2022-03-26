@@ -50649,14 +50649,14 @@ var Application = PIXI.Application,
     Sprite = PIXI.Sprite,
     AnimatedSprite = PIXI.AnimatedSprite,
     Rectangle = PIXI.Rectangle;
-var boardInString = ['        ', '        ', '        ', '   겨혼   ', '  bㄹ  k ', '        ', '        '].map(function (s) {
+var boardInString = ['          ', '          ', '          ', '    겨혼    ', '   bㄹ  k  ', '          ', '          '].map(function (s) {
   return s.split('');
 });
 var game = new state_1.SingleGame(boardInString); //Create a Pixi Application
 
 var app = new PIXI.Application({
-  width: game.board.M * 48,
-  height: game.board.N * 48,
+  width: 800,
+  height: 450,
   antialias: false,
   resolution: devicePixelRatio
 });
@@ -50697,21 +50697,6 @@ function setup() {
 
     screen.push(newSpriteRow);
   }
-  /*
-  const baba_frames = [];
-  let i;
-  for(i = 0;i < 3;i++) {
-    const texture = Texture.from(`baba-${i}.png`);
-    baba_frames.push(texture);
-  }
-  const baba = new AnimatedSprite(baba_frames);
-  baba.animationSpeed = 0.1;
-  baba.play();
-     //Position the rocket sprite on the canvas
-  baba.x = 24*5;
-  baba.y = 24*5;
-  */
-
 
   var left = keyboard(37),
       up = keyboard(38),
@@ -50830,7 +50815,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54431" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63992" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
