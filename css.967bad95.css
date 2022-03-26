@@ -8,13 +8,26 @@ html, body {
 }
 
 .container {
-    display: flex;
+    display:flex;
     justify-content: center;
     height: 100%;
+    align-items: center;
 }
 
 canvas {
     height: 100%;
+}
+
+@media screen and (orientation: portrait) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100vh;
+      height: 100vw;
+    }
 }
 
 /*# sourceMappingURL=/css.967bad95.css.map */
