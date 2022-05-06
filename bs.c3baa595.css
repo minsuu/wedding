@@ -11118,5 +11118,76 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.cover-container {
+  max-width: 42em;
+  min-width: 320px;
+}
+
+#hero {
+  background-image: url("/bg3.9bd6c1bf.jpg");
+  min-height: calc(var(--vh, 1vh) * 60);
+  background-position: top;
+  background-size: cover;
+}
+
+#hero-desc {
+  min-height: calc(var(--vh, 1vh) * 40);
+}
+
+@font-face {
+  font-family: "Daehan-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Daehan-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Daehan-Regular";
+  font-weight: normal;
+  font-style: normal;
+  touch-action: pan-y;
+}
+
+.title-eng {
+  font-family: Georgia;
+  letter-spacing: 0.2rem;
+}
+
+.invi-text {
+  font-size: max(min(3.5vw, 1rem), 0.7rem);
+}
+
+.bi {
+  height: 1rem;
+  width: 1rem;
+}
+
+.bi-telephone-fill {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.bi-chat-text-fill {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#app {
+  height: 100%;
+}
+
+.text-blue {
+  color: #0d6efd;
+}
+
+.text-pink {
+  color: #d63384;
+}
 
 /*# sourceMappingURL=/bs.c3baa595.css.map */

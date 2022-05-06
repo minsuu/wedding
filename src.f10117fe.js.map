@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"src.f10117fe.js","sourceRoot":".."}
+{"version":3,"sources":["src/index.ts"],"names":[],"mappings":";;;;;AAGA,IAAI,EAAE,GAAG,MAAM,CAAC,WAAP,GAAqB,IAA9B;AACA,QAAQ,CAAC,eAAT,CAAyB,KAAzB,CAA+B,WAA/B,CAA2C,MAA3C,EAAmD,GAAA,MAAA,CAAG,EAAH,EAAK,IAAL,CAAnD","file":"src.f10117fe.js","sourceRoot":"..","sourcesContent":["// Import all plugins\nimport * as bootstrap from 'bootstrap';\n\nlet vh = window.innerHeight * 0.01;\ndocument.documentElement.style.setProperty(\"--vh\", `${vh}px`);"]}
