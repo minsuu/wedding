@@ -11211,6 +11211,11 @@ body {
   color: #d63384;
 }
 
+#map {
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 30);
+}
+
 #main-carousel-list {
   max-height: calc(var(--vh, 1vh) * 60);
 }
