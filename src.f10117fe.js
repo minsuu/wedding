@@ -11916,6 +11916,11 @@ require("bootstrap");
 var splide_1 = require("@splidejs/splide");
 
 document.addEventListener('DOMContentLoaded', function () {
+  var _a;
+
+  var targetDate = new Date('06/11/2022');
+  var days = Math.max(0, targetDate.getTime() - new Date().getTime() + 1000 * 60 * 60 * 24 - 1) / (1000 * 60 * 60 * 24);
+  (_a = document.getElementById('countdown-day')) === null || _a === void 0 ? void 0 : _a.textContent = Math.floor(days) + "일";
   var thumb = new splide_1.Splide('#thumbnail-carousel', {
     fixedWidth: 70,
     fixedHeight: 70,
@@ -11993,7 +11998,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50006" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52859" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
