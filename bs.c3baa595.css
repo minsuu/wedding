@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11148,6 +11149,16 @@ textarea.form-control-lg {
   font-weight: normal;
   font-style: normal;
 }
+.card-body {
+  font-size: max(min(4vw, 1.1rem), 0.8rem);
+  text-align: left;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+#container-date {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -11156,7 +11167,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: "Daehan-Regular";
+  font-family: "Daehan-Regular", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   font-weight: normal;
   font-style: normal;
   touch-action: pan-y;
@@ -11218,6 +11229,7 @@ body {
 
 #map-detail {
   cursor: pointer;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
 
 #main-carousel-list {
