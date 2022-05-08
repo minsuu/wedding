@@ -11201,6 +11201,7 @@ body {
 .splide__slide {
   max-height: 60vh;
   overflow: hidden;
+  border: none !important;
 }
 
 .splide__slide img {
@@ -11211,7 +11212,7 @@ body {
 }
 
 .thumbnail {
-  cursor: pointer;
+  padding: 3px;
   opacity: 0.3;
 }
 

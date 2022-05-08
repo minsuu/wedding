@@ -3858,19 +3858,6 @@ var vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
 
 var splide_1 = require("@splidejs/splide");
-/*
-var thumbnails = document.getElementById('main-carousel-list');
-for (let i = 0; i < 15; i++) {
-    var newThumb: Element = document.createElement('li');
-    newThumb.classList.add('splide__slide');
-
-    var newThumbImg: Element = document.createElement('img');
-    newThumbImg.attributes['data-splide-lazy'] = new URL('./assets/gallery/' + i.toString().padStart(3, "0") + '.jpg?as=avif', import.meta.url);
-    newThumb.appendChild(newThumbImg);
-    thumbnails?.appendChild(newThumb);
-}
-*/
-
 
 document.addEventListener('DOMContentLoaded', function () {
   var thumb = new splide_1.Splide('#thumbnail-carousel', {
@@ -3950,7 +3937,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61355" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51997" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
