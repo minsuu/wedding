@@ -11216,6 +11216,10 @@ body {
   height: calc(var(--vh, 1vh) * 30);
 }
 
+#map-detail {
+  cursor: pointer;
+}
+
 #main-carousel-list {
   max-height: calc(var(--vh, 1vh) * 60);
 }

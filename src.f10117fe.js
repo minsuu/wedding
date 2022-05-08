@@ -11915,17 +11915,9 @@ require("bootstrap");
 
 var splide_1 = require("@splidejs/splide");
 
-var icon = new URL('./assets/ico_pin.jpeg', import.meta.url);
 var mapOptions = {
   center: new naver.maps.LatLng(37.4830633, 127.0340172),
-  zoom: 16,
-  icon: {
-    url: icon,
-    size: new naver.maps.Size(25, 34),
-    scaledSize: new naver.maps.Size(25, 34),
-    origin: new naver.maps.Point(0, 0),
-    anchor: new naver.maps.Point(12, 34)
-  }
+  zoom: 16
 };
 var map = new naver.maps.Map('map', mapOptions);
 var marker = new naver.maps.Marker({
@@ -12015,7 +12007,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59622" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61327" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
