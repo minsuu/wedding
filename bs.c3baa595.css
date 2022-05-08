@@ -11169,6 +11169,18 @@ body {
 
 .invi-text {
   font-size: max(min(3.5vw, 1rem), 0.7rem);
+  letter-spacing: 0.1rem;
+}
+
+.invi-name {
+  font-size: max(min(3.5vw, 1rem), 0.7rem);
+  letter-spacing: 0.1rem;
+}
+
+.invi-name b {
+  font-size: 110%;
+  letter-spacing: 0.2rem;
+  opacity: 100%;
 }
 
 .bi {
@@ -11177,13 +11189,15 @@ body {
 }
 
 .bi-telephone-fill {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  cursor: pointer;
 }
 
 .bi-chat-text-fill {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  cursor: pointer;
 }
 
 #app {
@@ -11198,8 +11212,11 @@ body {
   color: #d63384;
 }
 
+#main-carousel-list {
+  max-height: calc(var(--vh, 1vh) * 60);
+}
+
 .splide__slide {
-  max-height: 60vh;
   overflow: hidden;
   border: none !important;
 }
