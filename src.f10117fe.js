@@ -3860,6 +3860,22 @@ document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
 var splide_1 = require("@splidejs/splide");
 
 document.addEventListener('DOMContentLoaded', function () {
+  var thumb = new splide_1.Splide('#thumbnail-carousel', {
+    fixedWidth: 70,
+    fixedHeight: 70,
+    gap: 10,
+    rewind: true,
+    pagination: false,
+    isNavigation: true,
+    arrows: false,
+    focus: 'center',
+    breakpoints: {
+      600: {
+        fixedWidth: 50,
+        fixedHeight: 50
+      }
+    }
+  });
   var splide = new splide_1.Splide('#main-carousel', {
     pagination: false
   });
@@ -3888,7 +3904,9 @@ document.addEventListener('DOMContentLoaded', function () {
       current = thumbnail;
     }
   });
+  splide.sync(thumb);
   splide.mount();
+  thumb.mount();
 });
 },{"@splidejs/splide":"node_modules/@splidejs/splide/dist/js/splide.esm.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -3918,7 +3936,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62426" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61111" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

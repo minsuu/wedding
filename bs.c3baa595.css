@@ -11210,33 +11210,13 @@ body {
   object-position: top;
 }
 
-.thumbnails {
-  display: flex;
-  margin: 1rem auto 0;
-  padding: 0;
-  justify-content: center;
-}
-
 .thumbnail {
-  width: 70px;
-  height: 70px;
-  overflow: hidden;
-  list-style: none;
-  margin: 0 0.2rem;
   cursor: pointer;
   opacity: 0.3;
-  display: flex;
 }
 
-.thumbnail.is-active {
+.splide__slide.is-active {
   opacity: 1;
-}
-
-.thumbnail img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: top;
 }
 
 /*# sourceMappingURL=/bs.c3baa595.css.map */
