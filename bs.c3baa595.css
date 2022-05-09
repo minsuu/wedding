@@ -11135,6 +11135,29 @@ textarea.form-control-lg {
   max-height: calc(var(--vh, 1vh) * 50);
 }
 
+.d-xs-block {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .d-xs-block {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .d-xs-none {
+    display: none;
+  }
+}
+.modal {
+  padding-right: 0px !important;
+}
+
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+}
+
 .today {
   padding: 5px;
 }
