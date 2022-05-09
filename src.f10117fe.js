@@ -12818,7 +12818,7 @@ var clipboard_1 = __importDefault(require("clipboard"));
 var bootstrap_1 = require("bootstrap");
 
 var mapOptions = {
-  center: new naver.maps.LatLng(37.4830633, 127.0340172),
+  center: new naver.maps.LatLng(37.4822436, 127.0355851),
   zoom: 16
 };
 var map = new naver.maps.Map('map', mapOptions);
@@ -12917,7 +12917,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51530" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59043" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
