@@ -11124,6 +11124,16 @@ textarea.form-control-lg {
   min-width: 320px;
 }
 
+.divider {
+  background-color: #495057;
+  -webkit-mask: url("/divider.d0901e48.svg") no-repeat 50% 50%;
+  mask: url("/divider.d0901e48.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 88px;
+  height: 15px;
+}
+
 #hero {
   background-image: url("/bg3.9bd6c1bf.jpg");
   min-height: calc(var(--vh, 1vh) * 60);
@@ -11132,7 +11142,7 @@ textarea.form-control-lg {
 }
 
 #galleryCarousel {
-  max-height: calc(var(--vh, 1vh) * 50);
+  max-height: calc(var(--vh, 1vh) * 60);
 }
 
 .d-xs-block {

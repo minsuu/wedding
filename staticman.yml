@@ -1,0 +1,85 @@
+# Name of the property. You can have multiple properties with completely
+# different config blocks for different sections of your site.
+# For example, you can have one property to handle comment submission and
+# another one to handle posts.
+comments:
+  # (*) REQUIRED
+  #
+  # Names of the fields the form is allowed to submit. If a field that is
+  # not here is part of the request, an error will be thrown.
+  allowedFields: ["name", "email", "url", "message", "replying_to_uid", "subscribe"]
+
+  # (*) REQUIRED
+  #
+  # Name of the branch being used. Must match the one sent in the URL of the
+  # request.
+  branch: gh-pages
+
+  # Text to use as the commit message or pull request title. Accepts placeholders.
+  commitMessage: "Comment from {fields.name} on {options.slug}"
+
+  # (*) REQUIRED
+  #
+  # Destination path (filename) for the data files. Accepts placeholders.
+  filename: "{@date:YYYY-MM-DD_HH-mm-ss}_{fields.name}"
+
+  # The format of the generated data files. Accepted values are "json", "yaml"
+  # or "frontmatter"
+  format: "yaml"
+
+  # List of fields to be populated automatically by Staticman and included in
+  # the data file. Keys are the name of the field. The value can be an object
+  # with a `type` property, which configures the generated field, or any value
+  # to be used directly (e.g. a string, number or array)
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"
+
+  # Whether entries need to be approved before they are published to the main
+  # branch. If set to `true`, a pull request will be created for your approval.
+  # Otherwise, entries will be published to the main branch automatically.
+  moderation: false
+  
+  # Akismet spam detection
+  akismet:
+    enabled: true
+    author: "name"
+    authorEmail: "email"
+    content: "message"
+    type: "comment"
+
+  # Name of the site. Used in notification emails.
+  name: "Minsu and Dokyung's wedding"
+
+  # Notification settings. When enabled, users can choose to receive notifications
+  # via email when someone adds a reply or a new comment. This requires an account
+  # with Mailgun, which you can get for free at http://mailgun.com.
+  notifications:
+    # Enable notifications
+    enabled: true
+
+    # (!) ENCRYPTED
+    #
+    # Mailgun API key
+    apiKey: "utdKrbydMEr5izvymApnWOAIo995/Xo6YqoCpp5Fvs7XMt/FWizx02c64VFYQu8MMbMPkz6FtcL53sQOKwyNbU/RFJ5A3jcm9YXcL12NlEbxbX8thb/OTcZxUeHvpC+xssy0XPsF5kjTfs0qMROj1UrHnl0KbkZQE19+FlnDkf+PMEqOObanVBqWtX5GMQZJoDgA6ndE/HMZtkKfB4SGVFQc8n6vInHQNenP4i2uzRtj4qTe1AGfD1oxk1g9J8JLcMq9v1qxc0UlLlHzLFyb4owhmdcyA3TnSIHggP2iqwqaWZ+JC0QkU5W+WJwFExCQIycS8BR7Hr9IdK12k8xQ2YOYW94URtFcg1CRZnCTFy8RdW1uWjGXLYKMOjU17ZPYdkB/J3trSHDALdQyNxix2jynMn7U9RepoSNvHFQi8cVRLBXogNlAHBx8MwMxStm4+M3YnAMeTkKuQpNIlvHbEhIQzzwGcCI145Zui2AL2YPI4HTHU4jkyzvtPqNWwB0LzXGosPXmkcGibRDqeoEqGIKbGDDUjLfSBp9Hs4Kza39y+UIo3H7tPVN2YorRhStCv8hsMkSEp2RkKw86D3SF/CwI2HQtkUxsgbi4+R1jnxK5ByONFh/KI74h67t2v4PzwF+Om3dr/KYKEfYKNIx/8HiEgwBHNWt7qn+WtoW+LOI="
+
+    # (!) ENCRYPTED
+    #
+    # Mailgun domain (encrypted)
+    domain: "qXOV0sBwlQG2o9ViVYHL7gU1wSl4EHC8ZcDw9hU9ri1oE8375e7JgEMeFVVj/TsUb9GRFpwCYI7i/g2Yoq/9jDzz+CvvTVKjqYETCUTGZHhVP6v5EGAx7WDnuLARpBjcnh1ZDZpqb4O13FgKZ8XZUdXCoDEYx3VLm1GjfOS3ADnmTBB2cKlEREr0GQn5fKKItDIc53UNrO2NTSqr884AdB7QfOmiJzlHhEvrX7Esnj+7J0x+OydGZjCWUNF7KN2KtXixDgbJMGcBKjb6fTG9qdUpZnGWEPS/+UnjLh0IHrodHmGFXesisQNlKQ0e81n3AwswJLH6Klch4BXU/9pXHvivnK+Jvn5mU6tcMO0EHPKtC1uPmSJPnd8aVf2YXUZFMS3MN86oA2chO59Q4Tg7JjzS6P970wrWVwnxCDkXrfyvwGf0rpz5hZqSso1Fvvx7EuzsBNA+F+oUzqzJwJl2ZwfqlvAZ5bMNtXN+YjwkNAxD+iWB1m7uPvrSylYQm8DBzblDrDjbCgqMA1snjlUooh3VUEPhjLZ1suMTuJuK654qO+qAy72XEnzoSKHHCl/QW1zGjObyDEDVxUeZ0EJGTzLQAWK8pW8+l29yR4jEIXctUpMcJu5/4Id6PlHGJUOUmwSd1DDarN6MdPm2z4AMhcTCwMjmnooJwKYcr9eV6K4="
+
+  # (*) REQUIRED
+  #
+  # Destination path (directory) for the data files. Accepts placeholders.
+  path: "comments/{options.slug}"
+
+  # Names of required fields. If any of these isn't in the request or is empty,
+  # an error will be thrown.
+  requiredFields: ["name", "message"]
+
+  # List of transformations to apply to any of the fields supplied. Keys are
+  # the name of the field and values are possible transformation types.
+  transforms:
+    email: md5
