@@ -11281,6 +11281,10 @@ body {
   object-position: top;
 }
 
+.img_contain img {
+  object-fit: contain !important;
+}
+
 .thumbnail {
   padding: 3px;
   opacity: 0.3;
