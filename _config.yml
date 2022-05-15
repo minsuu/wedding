@@ -23,7 +23,7 @@ email: polynomial6@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Invitation for the wedding
 baseurl: 'wedding' # the subpath of your site, e.g. /blog
-permalink: /:title/
+permalink: /:title
 url: "https://minsuu.github.io/wedding"
 github_username: minsuu
 
