@@ -239,16 +239,8 @@
   border-color: rgba(0, 0, 0, 0.8);
 }
 
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper {
-  display: inline-block;
-  position: relative;
-  max-width: 25%;
-  margin: 0;
-}
-
 .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input {
-  padding: 0.3em 10px;
-  max-width: 100%;
+  padding: 0.4em 10px;
   border-radius: 3px;
   background-color: #fff;
   line-height: 1.4em;
@@ -260,12 +252,6 @@
   display: inline-block;
   line-height: 1.4em;
   height: 1.4em;
-}
-
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action {
-  display: block;
-  float: right;
-  margin: 1.4em 0 0 5px;
 }
 
 .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input {
@@ -312,23 +298,25 @@
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper {
-    max-width: 100%;
-    margin: 0 0 0.3em;
-  }
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper {
+  margin: 0 0 0.3em;
+}
 
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
   .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input {
-    width: 100%;
+    max-width: 50vw;
   }
+}
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action {
+  margin-top: 0;
+}
 
-  .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action {
-    margin-top: 0;
-  }
-
-  .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action button {
-    white-space: nowrap;
-  }
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action button {
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=/isso.a376979c.css.map */
