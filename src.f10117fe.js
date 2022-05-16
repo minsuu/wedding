@@ -12822,11 +12822,22 @@ var mapOptions = {
   zoom: 16
 };
 var map = new naver.maps.Map('map', mapOptions);
-var marker = new naver.maps.Marker({
-  position: position,
+var rest = new naver.maps.Marker({
+  position: new naver.maps.LatLng(37.4824184, 127.0367062),
   map: map,
   icon: {
-    url: 'ico_pin.jpeg',
+    content: ['<div class="map_group">', '<div class="pin pin_rest d-flex">', '<div class="icon" onclick="window.open(\'http://naver.me/xNdli7bv\', \'_blank\');"></div>', '<span>갈비사랑<br/>(피로연장)</span>', '</div>', '</div>'].join(''),
+    size: new naver.maps.Size(25, 34),
+    scaledSize: new naver.maps.Size(25, 34),
+    origin: new naver.maps.Point(0, 0),
+    anchor: new naver.maps.Point(12, 34)
+  }
+});
+var marker = new naver.maps.Marker({
+  position: new naver.maps.LatLng(37.481256, 127.0363039),
+  map: map,
+  icon: {
+    content: ['<div class="map_group">', '<div class="pin pin_loc d-flex flex-column">', '<div class="icon" onclick="window.open(\'http://naver.me/xv06Tgs2\', \'_blank\')"></div>', '<span>서울가정행정법원 융선당 예식장</span>', '</div>', '</div>'].join(''),
     size: new naver.maps.Size(25, 34),
     scaledSize: new naver.maps.Size(25, 34),
     origin: new naver.maps.Point(0, 0),
@@ -12925,7 +12936,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58409" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55844" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

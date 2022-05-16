@@ -11134,6 +11134,38 @@ textarea.form-control-lg {
   height: 15px;
 }
 
+.pin_rest .icon {
+  background: url("/ico_rest.4466d524.png");
+}
+
+.pin_loc .icon {
+  background: url("/ico_pin.4e202a3e.jpeg");
+}
+
+.pin .icon {
+  width: 25px;
+  background-size: 25px 34px;
+  height: 34px;
+}
+
+.pin span {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif;
+  font-size: 0.8rem;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-weight: 500;
+}
+
+.pin_loc span {
+  width: 6rem;
+  margin-left: -2.4rem;
+}
+
+.pin_rest span {
+  width: 5rem;
+  margin-left: 0.3rem;
+  text-align: start;
+}
+
 #hero {
   background-image: url("/bg3.9bd6c1bf.jpg");
   min-height: calc(var(--vh, 1vh) * 60);
@@ -11188,7 +11220,7 @@ textarea.form-control-lg {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
 
-#container-date {
+.text-cap {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
 
@@ -11212,12 +11244,12 @@ body {
 }
 
 .invi-text {
-  font-size: max(min(3.5vw, 1rem), 0.7rem);
+  font-size: max(min(3.3vw, 1rem), 0.6rem);
   letter-spacing: 0.1rem;
 }
 
 .invi-name {
-  font-size: max(min(3.5vw, 1rem), 0.7rem);
+  font-size: max(min(3.3vw, 1rem), 0.6rem);
   letter-spacing: 0.1rem;
 }
 
