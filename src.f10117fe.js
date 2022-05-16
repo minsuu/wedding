@@ -12823,8 +12823,15 @@ var mapOptions = {
 };
 var map = new naver.maps.Map('map', mapOptions);
 var marker = new naver.maps.Marker({
-  position: new naver.maps.LatLng(37.481256, 127.0363039),
-  map: map
+  position: position,
+  map: map,
+  icon: {
+    url: 'ico_pin.jpeg',
+    size: new naver.maps.Size(25, 34),
+    scaledSize: new naver.maps.Size(25, 34),
+    origin: new naver.maps.Point(0, 0),
+    anchor: new naver.maps.Point(12, 34)
+  }
 });
 document.addEventListener('DOMContentLoaded', function () {
   var _a;
@@ -12918,7 +12925,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58265" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58409" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
