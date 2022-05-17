@@ -11248,12 +11248,17 @@ body {
 }
 
 .invi-text {
-  font-size: max(min(3.3vw, 1rem), 0.6rem);
-  letter-spacing: 0.1rem;
+  font-size: max(min(3.6vw, 1rem), 0.6rem);
+  letter-spacing: 0.05rem;
 }
 
 .invi-name {
-  font-size: max(min(3.3vw, 1rem), 0.6rem);
+  font-size: max(min(3.6vw, 1rem), 0.6rem);
+  letter-spacing: 0.05rem;
+}
+
+.loc-text {
+  font-size: max(min(4vw, 1rem), 0.6rem);
   letter-spacing: 0.1rem;
 }
 
